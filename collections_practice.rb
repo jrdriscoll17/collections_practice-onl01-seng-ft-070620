@@ -42,11 +42,10 @@ end
 def add_s(array)
 
   array.each_with_index do |element, index|
-    if index != 1
-      new_array.push("#{element}s")
+    if index == 1
+      element
     else
-      new_array.push(element)
+      element + "s"
     end
   end
-  new_array
 end
